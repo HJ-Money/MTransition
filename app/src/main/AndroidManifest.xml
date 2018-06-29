@@ -1,0 +1,73 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mjun.demo">
+    <application android:allowBackup="true"
+                 android:label="@string/app_name"
+                 android:icon="@mipmap/ic_launcher"
+                 android:roundIcon="@mipmap/ic_launcher_round"
+                 android:supportsRtl="true"
+                 android:theme="@style/AppTheme">
+
+    <activity android:name="com.mjun.demo.EnterActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+    </activity>
+    <activity android:name="com.mjun.demo.example2.Example2EntryActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example2.Example2DetailActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example0.Example0DetailActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example0.Example0EntryActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example1.Example1DetailActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example1.Example1EntryActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example3.Example3DetailActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example3.Example3EntryActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example4.Example4EntryActivity1">
+    </activity>
+    <activity android:name="com.mjun.demo.example4.Example4EntryActivity2">
+    </activity>
+    <activity android:name="com.mjun.demo.example4.Example4EntryActivity3">
+    </activity>
+    <activity android:name="com.mjun.demo.example4.Example4EntryActivity4">
+    </activity>
+    <activity android:name="com.mjun.demo.example41.Example41EntryActivity1">
+    </activity>
+    <activity android:name="com.mjun.demo.example41.Example41EntryActivity2">
+    </activity>
+    <activity android:name="com.mjun.demo.example41.Example41EntryActivity3">
+    </activity>
+    <activity android:name="com.mjun.demo.example41.Example41EntryActivity4">
+    </activity>
+    <activity android:name="com.mjun.demo.example51.Example51EntryActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example51.Example51DetailActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example6.Example6EntryActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example6.Example6DetailActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example7.Example7EntryActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example7.Example7DetailActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example8.Example8Activity">
+    </activity>
+    <activity android:name="com.mjun.demo.example9.Example9Activity">
+    </activity>
+    <activity android:name="com.mjun.demo.example10.Example10EntryActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.example10.Example10DetailActivity">
+    </activity>
+    <activity android:name="com.mjun.demo.TestActivityAnimtaionActivity">
+    </activity>
+
+    </application>
+</manifest>

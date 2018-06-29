@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:padding="20dp">
+
+        <Button
+            android:id="@+id/example0"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/example0_title"/>
+
+        <Button
+            android:id="@+id/example1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/example1_title"/>
+
+        <Button
+            android:id="@+id/example2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/example2_title"/>
+
+        <Button
+            android:id="@+id/example3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/example3_title"/>
+
+        <Button
+            android:id="@+id/example4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/example4_title"/>
+
+        <Button
+            android:id="@+id/example41"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/example41_title"/>
+
+        <Button
+            android:id="@+id/example5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/example5_title"/>
+
+        <Button
+            android:id="@+id/example6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/example6_title"/>
+
+        <Button
+            android:id="@+id/example7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/example7_title"/>
+
+        <Button
+            android:id="@+id/example8"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/example8_title"/>
+
+        <Button
+            android:id="@+id/example9"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/example9_title"/>
+
+        <Button
+            android:id="@+id/example10"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/example10_title"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="_mtransition_activityNoAnimation" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+    </style>
+
+    <style name="_mtransition_activityOpenNoAnimation" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+    </style>
+
+    <style name="_mtransition_activityCloseNoAnimation" parent="android:Animation.Activity">
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+    </style>
+
+    <style name="_mtransition_activityNoAnimation_androido" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/no_anim</item>
+        <item name="android:activityOpenExitAnimation">@anim/no_anim</item>
+        <item name="android:activityCloseEnterAnimation">@anim/no_anim</item>
+        <item name="android:activityCloseExitAnimation">@anim/no_anim</item>
+    </style>
+
+    <style name="_mtransition_activityOpenNoAnimation_androido" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/no_anim</item>
+        <item name="android:activityOpenExitAnimation">@anim/no_anim</item>
+    </style>
+
+    <style name="_mtransition_activityCloseNoAnimation_androido" parent="android:Animation.Activity">
+        <item name="android:activityCloseExitAnimation">@anim/no_anim</item>
+        <item name="android:activityCloseEnterAnimation">@anim/no_anim</item>
+    </style>
+</resources>

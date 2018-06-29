@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MTranstionDemo</string>
+    <string name="example0_title">Demo0:Basic example</string>
+    <string name="example1_title">Demo1:Change Transition at any time</string>
+    <string name="example2_title">Demo2:Basic example2</string>
+    <string name="example3_title">Demo3:Basic example3</string>
+    <string name="example4_title">Demo4:Multiple Activity example</string>
+    <string name="example41_title">Demo41:Multiple Activity example2</string>
+    <string name="example5_title">Demo5:Custom Transition Example</string>
+    <string name="example6_title">Demo6:Custom Transition Example2，Lottie</string>
+    <string name="example7_title">Demo7:Custom Transition Example3</string>
+    <string name="example8_title">Demo8:Transition between Fragment</string>
+    <string name="example9_title">Demo9:Transition in the same Activity</string>
+    <string name="example10_title">Demo10:A wounderful example</string>
+
+    <string name="example0_tip">Back key to return or try to slide to the right</string>
+    <string name="test_tip">This page is used to test the default android activity transitions</string>
+
+    <string name="example4_tip11">This is Activit 1</string>
+    <string name="example4_tip12">Click to Activity 2</string>
+    <string name="example4_tip21">This is Activit 2</string>
+    <string name="example4_tip22">Click to Activity 3</string>
+    <string name="example4_tip31">This is Activit 3</string>
+    <string name="example4_tip32">Click to Activity 4</string>
+    <string name="example4_tip41">This is Activit 4</string>
+
+    <string name="example41_tip11">This is Activit 1</string>
+    <string name="example41_tip12">Click to Activity 2</string>
+    <string name="example41_tip21">This is Activit 2, Or slide back</string>
+    <string name="example41_tip22">Click to Activity 3</string>
+    <string name="example41_tip31">This is Activit 3, Or slide back</string>
+    <string name="example41_tip32">Click to Activity 4</string>
+    <string name="example41_tip41">This is Activit 4, Or slide back</string>
+
+    <string name="example6_tip">Try to click on the cat, the material comes from http://www.lottiefiles.com/</string>
+    <string name="example7_tip1">The effect comes from https://github.com/7heaven/CurtainSlidingMenu</string>
+    <string name="example7_tip2">Exit or slide back</string>
+</resources>
