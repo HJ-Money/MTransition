@@ -7,8 +7,8 @@ MTransition是一个Android上的页面切换动画库，它可以让一些复�
 
 `该交互设计来源于:https://dribbble.com/shots/2493845-ToFind-Transition-Test`
 
-在上面的动图示例中，动画执行前后分别是两个不同的Activity。如下图：
-![](/Introduction/1.png)![](/Introduction/2.png)
+在上面的动图示例中，动画执行前后分别是两个不同的Activity。如下图：  
+![](/Introduction/1.png "Activity1") ![](/Introduction/2.png "Activity2")
 
 像这种跨Activity的切换动画是现有技术比较难实现的，并且还需要响应用户的跟手操作。MTransition非常适合这种情况。
 
