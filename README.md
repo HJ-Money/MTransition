@@ -1,47 +1,49 @@
+English  |  [中文文档](README_cn.md)
+
 MTransition
 ===========================
-MTransition是一个Android上的页面切换动画库，它可以让一些复杂的、自定义的页面切换动画更加简单地实现出来，节省开发成本。
+MTransition is a page switching animation library on Android,it can make some complex, custom page switching animations easier to implement, and reduce development time.
 
-## 示例
+## Example
 ![](/Introduction/1.gif)
 
-`该交互设计来源于:https://dribbble.com/shots/2493845-ToFind-Transition-Test`  
-
-在上面的动图示例中，动画执行前后分别是**两个不同的Activity**。如下图：  
+`The design comes from:https://dribbble.com/shots/2493845-ToFind-Transition-Test`  
+ 
+In the example above,before and after the animation is executed ** Two different Activity**.As shown below:
 ![](/Introduction/1.png "Activity1") ![](/Introduction/2.png "Activity2")
 
-像这种跨Activity的切换动画是现有技术比较难实现的，并且还需要**响应用户的跟手操作**。MTransition非常适合这种情况。
+**As a developer,you only need to complete UI development of two activities.The intermediate transition animation is handed over to MTransiton, and MTransiton can perfectly implement the various page switching animations you need.**
 
-**作为开发者的你，只需要完成两个Activity的UI开发即可，中间的过渡动画交给MTransiton处理，MTransiton可以完美实现你需要的各种页面切换\过渡动画，节省你的开发时间。**
+For more examples, please see this repository code or[SlidingActivity](https://github.com/HJ-Money/SlidingActivity)
 
-更多示例请看本仓库代码或者[SlidingActivity](https://github.com/HJ-Money/SlidingActivity)
+## Usage
 
-## 使用MTransition
 
-MTransition适用于**所有页面的切换动画，这里的页面不一定是Activity，也可以是Fragment、Window或者是同一个Activity的两个View，但是页面必须是占满整个屏幕的**，否则可能会出现效果不符合预期。
+MTransition is applicable to the switching animation of all pages. **The page here is not necessarily an Activity, but it can also be a Fragment, a Window, or two Views of the same Activity,but the page must be full of the entire screen. **
 
-#### 你可以通过Gradle引用它：
+#### You can add the dependency to your project build.gradle file:：
 ```Java
 compile 'com.mjun:mtransition:0.1.3'
 ```
 
-现假设我们需要实现一个从页面A(FromPage)到页面B(ToPage)的过渡动画，首先我们先完成页面A和页面B本身的UI开发，然后可以用MTransition完成过渡动画。
-#### 基础用法
+Now suppose that we need to implement a transition from page A (FromPage) to page B (ToPage). First of all, we complete the UI development of page A and page B, and then we can use MTransition to complete the transition animation.
 
-**step1**、在页面A打开页面B之前创建MTransition，并设置页面A最外层的View给MTransition：
+#### Basic usage
+
+**step1**、Create an MTransition before page A opens page B and set page A's outermost view to MTransition:
 ```Java
 final MTransition transition = MTransitionManager.getInstance().createTransition("example");
 transition.fromPage().setContainer(mContainerView, new ITransitPrepareListener() {
     @Override
     public void onPrepare(MTransitionView container) {
-        // 传递需要做动画的View
+        // Pass Views that need to be animated
         transition.fromPage().addTransitionView("icon", mIconView);
         ...
     }
 });
 ```
 
-**step2**、在页面B创建之后，且在页面显示之前，设置页面B最外层的View给MTransition，同时告诉MTransition页面的View要做哪些动画，调整View顺序等：
+**step2**、After page B is created, and before the page is displayed, set the outermost View of page B to MTransition, and tell the View which animation to be done, adjust the View order, and so on:
 ```Java
 final MTransition transition = MTransitionManager.getInstance().getTransition("example");
 transition.toPage().setContainer(mContainerView, new ITransitPrepareListener() {
@@ -54,14 +56,14 @@ transition.toPage().setContainer(mContainerView, new ITransitPrepareListener() {
 });
 ```
 
-**step3**、设置动画时长，然后start MTransition，一个过渡动画即完成
+**step3**、set the animation duration, then start MTransition.
 ```Java
 transition.setDuration(500);
 transition.start();
 ```
 
 ##### NOTE：
-**1**、如果页面A和B是Activity的话，因为Activity默认是有Activity的进场退场动画，所以需要在startActivity()和finish()之后调用以下代码：
+**1** If the pages A and B are Activities, because the Activity has default ActivityAnimtion, so the following code needs to be called after startActivity() and finish():
 ```Java
 startActivity(intent);
 MTranstionUtil.removeActivityAnimation(this);
@@ -72,38 +74,32 @@ finish();
 MTranstionUtil.removeActivityAnimation(this);
 ```
 
-**2**、在确定不再需要当前页面的MTransition时，请务必调用destoryTransition()来销毁MTransition，不然会内存泄漏：
+**2**、When determining that the MTransition of the current page is no longer needed, be sure to call destroyTransition() to destroy the MTransition, otherwise a memory leak will occur:
 ```Java
 MTransitionManager.getInstance().destoryTransition("example");
 ```
 
-#### 进阶用法
-##### 反向动画
-在页面B返回页面A时，你很有可能需要刚才的过渡动画反向执行一次，这时候可以调用reverse()，执行一遍反向动画，当然你可以随时改变动画路径，
-例如你可以改变动画时长、甚至完全换一个过渡动画；
+#### Advanced Usage
+##### Reverse animation
 ```Java
 final MTransition transition = MTransitionManager.getInstance().getTransition("example");
 transition.reverse();
 ```
 
-##### 定格动画
-你可以调用setProgress()让动画停留在你想要的地方，因此你可以利用这点实现跟手动画，具体请参考本仓库代码；
+##### setProgress
+You can call setProgress() to make the animation stay where you want, so you can use this to implement the animation which follows user's touch event. For details, please refer to this repository code.
 
-##### 自定义动画
-MTransition已经提供了一堆基础的动画api，例如平移、旋转、缩放、透明度等。这些api已经可以满足大部分需求，但是如果你需要一些形变或者更加复杂的动画，
-你就需要自定义动画。
+##### Custom animation
+MTransition has provided a bunch of basic animation apis such as translate, rotate, scale, alpha, and more. These apis already meet most of the needs, but if you need some deformation or more complex animations,
+You need to customize the animation.
 
-**step1**、将你的自定义动画View实现ITransitional接口
+**step1**, implement ITransitional interface with your custom animation View
 
-**step2**、调用replaceBy()接口，将你的自定义动画View替换原本的View，让它在过渡动画过程中做动画
+**step2**, call the replaceBy(), replace your custom animation View with the original View, and animate it during the transition animation
 
-该方案可以**结合Lottie或者其他动画库**，实现一些非常酷炫的效果，如下图，具体请参考本仓库代码中的Demo5、6、7；
-
+This can be **combined with Lottie or other animation library**, to achieve some very cool effects, as shown below, specific please refer to this warehouse code Demo5,6,7;
 ![](/Introduction/2.gif) ![](/Introduction/3.gif)
 
-## 其他说明
-目前该库处在探索优化阶段，接下来一方面会去优化性能，尝试更优的实现方案，另一方面将往“解除页面必须占满屏幕的限制”方向进发，让MTransition可以服务
-任意区域的过渡动画。
 
 
 
