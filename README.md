@@ -97,7 +97,9 @@ You need to customize the animation.
 
 **step2**, call the replaceBy(), replace your custom animation View with the original View, and animate it during the transition animation
 
-This can be **combined with Lottie or other animation library**, to achieve some very cool effects, as shown below, specific please refer to this warehouse code Demo5,6,7;
+This can be **combined with Lottie or other animation library**, to achieve some very cool effects, as shown below, specific please refer to this warehouse code Demo5,6,7.  
+
+
 ![](/Introduction/2.gif) ![](/Introduction/3.gif)
 
 
