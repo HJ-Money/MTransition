@@ -1,15 +1,20 @@
-一、介绍
-
+MTransition
+===========================
 MTransition是一个Android上的页面切换动画库，它可以让一些复杂的、自定义的页面切换动画更加简单地实现出来，节省开发成本。
 
-二、示例
+## 示例
+![](/Introduction/1.gif)
 
-（示例动图）
-(drabble地址)
-在上面的动图示例中，动画执行前后分别是两个不同的Activity。作为开发者的你，只需要完成两个Activity的UI开发即可，中间的过渡动画交给
-MTransiton处理，MTransiton可以完美实现你需要的各种页面切换\过渡动画。
+`该交互设计来源于:https://dribbble.com/shots/2493845-ToFind-Transition-Test`
 
-更多示例请看本仓库代码或者
+在上面的动图示例中，动画执行前后分别是两个不同的Activity。如下图：
+![](/Introduction/1.png)![](/Introduction/2.png)
+
+像这种跨Activity的切换动画是现有技术比较难实现的，并且还需要响应用户的跟手操作。MTransition非常适合这种情况。
+
+作为开发者的你，只需要完成两个Activity的UI开发即可，中间的过渡动画交给MTransiton处理，MTransiton可以完美实现你需要的各种页面切换\过渡动画，节省你的开发时间。
+
+更多示例请看本仓库代码或者[SlidingActivity](https://github.com/HJ-Money/SlidingActivity)
 
 三、使用MTransition
 
