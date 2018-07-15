@@ -106,5 +106,7 @@ MTransition已经提供了一堆基础的动画api，例如平移、旋转、缩
 任意区域的过渡动画。
 
 
+## 更详细的使用介绍请看这里：https://blog.csdn.net/scnuxisan225/article/details/81004804
+
 
 --------------------------------
