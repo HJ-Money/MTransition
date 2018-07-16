@@ -4,8 +4,9 @@ MTransition
 ===========================
 MTransition is a page switching animation library on Android,it can make some complex, custom page switching animations easier to implement, and reduce development time.
 
-##Demo Apk
+## Demo Apk
 Download link:https://github.com/HJ-Money/MTransition/raw/master/Introduction/mtransition_demo.apk
+![](/Introduction/demo_qrcode.png)
 
 ## Example
 ![](/Introduction/1.gif)
