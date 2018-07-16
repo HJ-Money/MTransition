@@ -2,6 +2,10 @@ MTransition
 ===========================
 MTransition是一个Android上的页面切换动画库，它可以让一些复杂的、自定义的页面切换动画更加简单地实现出来，节省开发成本。
 
+## Demo Apk
+下载链接:https://github.com/HJ-Money/MTransition/raw/master/Introduction/mtransition_demo.apk
+![](/Introduction/demo_qrcode.png)
+
 ## 示例
 ![](/Introduction/1.gif)
 
